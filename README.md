@@ -2,9 +2,7 @@
 
 **Build & Run**
 
-```
-./gradlew clean  
-./gradlew build  
+``` 
 ./gradlew bootRun  
 ```
 
