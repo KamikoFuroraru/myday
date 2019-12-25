@@ -1,3 +1,3 @@
 package myday
 
-data class Myday(val errorCode: Long, val dataMessage: String)
+data class Myday(val errorCode: Int, val dataMessage: String)

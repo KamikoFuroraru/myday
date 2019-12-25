@@ -1,5 +1,6 @@
 package myday
 
+import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
@@ -11,7 +12,7 @@ class Controller {
 
     @GetMapping("/")
     fun progDay(@RequestParam(value = "year", defaultValue = "dd/mm/YY") dataMessage: String): Myday {
-        return Myday(200, getMyday(dataMessage))
+        return Myday(HttpStatus.OK.value(), getMyday(dataMessage))
     }
 
     fun getMyday(dataMessage: String): String {
