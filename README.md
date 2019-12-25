@@ -3,7 +3,7 @@
 **Build & Run**
 
 ``` 
-./gradlew bootRun  
+gradle bootRun  
 ```
 
 **Example**
